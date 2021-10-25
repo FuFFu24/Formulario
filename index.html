@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>Web Alonso Flores</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <span class="floating_element">
+          Formulario de usuario
+        </span>
+      </div>
+
+<!--   REGISTRO   -->
+
+      <div class="content_section floating_element">
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+            <h4>REGISTRO</h4>
+        </div>
+
+        <div>
+            <form action="http://formadorestic.com/alumnosdaw/procesaformulario.php" method="POST">
+                <br><label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <br><label for="email">Correo:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <br><label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad"><br>
+                <br><p>Seleccione la opcion correcta:</p>
+                <br><input type="radio" id="menorEdad" name="mayormenor" value="eres MENOR de edad">
+                <label for="menorEdad">MENOR de edad</label>
+                <br><input type="radio" id="mayorEdad" name="mayormenor" value="eres MAYOR de edad">
+                <label for="mayorEdad">MAYOR de edad</label>
+                <br><br><input type="submit" name="Enviar" id="enviar" value="ENVIAR">
+            </form> 
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
